@@ -53,6 +53,8 @@ table {
 
 p, h1 {font-family: Helvetica, Arial, sans-serif;}
 
+a {text-decoration: none;}
+
 /* down we go */
 
 #top {
@@ -121,6 +123,11 @@ p, h1 {font-family: Helvetica, Arial, sans-serif;}
 	height: 100%;
 	width: 100%;
 	top: 100%;
+
+	font-size: 3em;
+	margin: 0 auto;
+	text-align: center;
+	color: #000000;
 }
 
 #row1 {
@@ -128,7 +135,7 @@ p, h1 {font-family: Helvetica, Arial, sans-serif;}
 	height: 25vh;
 	width: 100%;
 	color: #FFFFFF;
-	background-color: red;
+	background-color: #3B5998;
 }
 
 #row2 {
@@ -136,7 +143,12 @@ p, h1 {font-family: Helvetica, Arial, sans-serif;}
 	height: 25vh;
 	width: 100%;
 	color: #FFFFFF;
-	background-color: blue;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left , #F9ED32 , #FD5949, #EE2A7B , #002AFF ); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right , #F9ED32 , #FD5949, #EE2A7B , #002AFF )); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right , #F9ED32 , #FD5949, #EE2A7B , #002AFF )); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right , #F9ED32 , #FD5949, #EE2A7B , #002AFF )); /* Standard syntax */
+	overflow: hidden;
 }
 
 #row3 {
@@ -144,8 +156,8 @@ p, h1 {font-family: Helvetica, Arial, sans-serif;}
 	float: right;
 	height: 25vh;
 	width: 100%;
-	color: #FFFFFF;
-	background-color: green;
+	color: #000000;
+	background-color: #D1D2D3;
 }
 
 #row4 {
@@ -154,7 +166,7 @@ p, h1 {font-family: Helvetica, Arial, sans-serif;}
 	height: 25vh;
 	width: 100%;
 	color: #FFFFFF;
-	background-color: purple;
+	background-color: #000000;
 }
 
 /* version one1
