@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	height: 100%;
+	width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* type control */
+
+p, h1 {font-family: Helvetica, Arial, sans-serif;}
+
+/* down we go */
+
+#top {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#topleft {
+	position: relative;
+	float: left;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #A52A2A;
+}
+
+#topright {
+	position: relative;
+	float: right;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #FFE4B5;
+}
+
+#middleleft {
+	position: relative;
+	float: left;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #0F2D20;
+}
+
+#middleright {
+	position: relative;
+	float: right;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #FF6347;
+}
+
+#bottomleft {
+	position: relative;
+	float: left;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #3f2a14;
+}
+
+#bottomright {
+	position: relative;
+	float: right;
+	height: 33.33vh;
+	width: 50%;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+#bot {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 100%;
+}
+
+#row1 {
+	position: relative;
+	height: 25vh;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: red;
+}
+
+#row2 {
+	position: relative;
+	height: 25vh;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: blue;
+}
+
+#row3 {
+	position: relative;
+	float: right;
+	height: 25vh;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: green;
+}
+
+#row4 {
+	position: relative;
+	float: right;
+	height: 25vh;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: purple;
+}
+
+/* version one1
+
+
+
+#title {
+	position: relative;
+	height: 25vh;
+	width: 100%;
+	background-color: #D1D2D3;
+}
+
+#title h1 {
+	font-size: 3em;
+	padding-top: 35px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	text-align: center;
+	color: #000000;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+}
+
+#title p {
+	font-size: 1em;
+	line-height: 1.2;
+	margin: 0 auto;
+ 	text-align: center;
+	color: #000000;
+}
+
+*/
