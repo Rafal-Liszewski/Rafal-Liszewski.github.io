@@ -129,6 +129,6 @@ display: block;
  background-image: url(box.svg);
 }
 
-#rollover:hover {
+#rollover:hover, #rollover:active{
 	background-image: url(aa_01alt.jpg);
 }
