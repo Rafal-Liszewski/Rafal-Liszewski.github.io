@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Small Room">
+		<title> Small Room </title>
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="icon" href="icon.png">
+
+<script>
+var randomText = [];
+randomText[0] = 'strict no return policy';
+randomText[1] = 'calm down there, soldier';
+randomText[2] = 'eternally the best';
+randomText[3] = 'thats real thinking';
+randomText[4] = 'sharpies vs mods';
+randomText[5] = 'i dont ride big';
+randomText[6] = 'water → phone? → plan (time)';
+
+var shuffleTitle = function() {
+  var id = Math.round(Math.random() * (randomText.length - 1));
+  document.getElementById('randTitle').innerHTML = randomText[id];
+}
+</script>
+
+
+	</head>
+
+  <body onload="shuffleTitle()">
+
+		<div id="left">
+			<div class="text">
+				<h1>small room</h1>
+				<p id="randTitle" onclick="shuffleTitle()">Title</p>
+				<br>
+				<h2>— projects</h2>
+				<a id="bef" href="project01.html"><img src="box.svg"></a>
+				<a id="hov" href="project01.html"><img src="content/aa_01.jpg"></a>
+				<p>addison ash</p>
+				<img src="box.svg">
+				<p>hannah benwell photography</p>
+				<img src="box.svg">
+				<p>portside records</p>
+				<img src="box.svg">
+				<p>the meristems</p>
+				<img src="box.svg">
+				<p>death of a designer</p>
+				<a id="rollover" href="project01.html"></a>
+				<p>christmas card</p>
+				<br>
+				<h2>— look</h2>
+				<img src="box.svg">
+				<p>zines</p>
+				<p>get some —</p>
+				<p>mail[at]smallroom.com.au</p>
+				<p>Subject line ‘TRASH’</p>
+				<p>with list of books, variants</p>
+				<p>and quantities needed.</p>
+				<br>
+				<p>social media</p>
+				<img src="box.svg">
+				<img src="box.svg">
+				<img src="box.svg">
+				<br>
+				<h2>— paul's hotel</h2>
+				<img src="box.svg">
+				<p>family</p>
+				<p>—</p>
+				<p>& friends</p>
+				<img src="box.svg">
+				<img src="box.svg">
+				<img src="box.svg">
+				<img src="box.svg">
+				<img src="box.svg">
+				<p>stop and ring —</p>
+				<p>if you need —</p>
+				<p>graphic design —</p>
+				<p>visual communication —</p>
+				<p>art direction —</p>
+				<p>+61 419 774 192</p>
+				<p>located in adelaide south austrlia</p>
+				<p>154 angas st</p>
+				<p>adelaide 5000</p>
+				<p>mail@smallroom.com</p>
+				<img src="box.svg">
+			</div>
+		</div>
+
+  </body>
+
+</html>
