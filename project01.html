@@ -7,20 +7,26 @@
 		<meta name="keywords" content="">
 		<meta name="author" content="Small Room">
 		<title> Small Room </title>
-		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="proj_style.css">
 		<link rel="icon" href="icon.png">
 	</head>
 
   <body>
 
 		<div id="left">
-			<div class="text">
+
 				<h1>small room</h1>
 				<p><a href="index.html">return home</a></p>
 				<br>
 				<h2>Addison Ash</h2>
-				<img src="box.svg">
-				<p>1/7</p>
+
+				<div class="mySlides" onclick="plusDivs(+1)" ><img src="content/aa_01.jpg"><p>1/4</p></div>
+				<div class="mySlides" onclick="plusDivs(+1)" ><img src="content/aa_02.jpg"><p>2/4</p></div>
+				<div class="mySlides" onclick="plusDivs(+1)" ><img src="content/aa_03.jpg"><p>3/4</p></div>
+				<div class="mySlides" onclick="plusDivs(+1)" ><img src="content/aa_04.jpg"><p>4/4</p></div>
+				<span id="counter"></span>
+
+				<br>
 
 				<p>An independent fashion
 				label, designed and made in Adelaide.
@@ -28,12 +34,36 @@
 				and bold, yet simple nature of the
 				garments themselves.
 
-				www.addisonash.com
+				<a href="">www.addisonash.com</a>
 				</p>
 
-			</div>
 		</div>
 
   </body>
+
+	<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+		showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = x.length} ;
+		for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+		}
+		x[slideIndex-1].style.display = "block";
+}
+
+function changeCounter(cur, total) {
+	document.getElementById("counter").innerHTML = cur + "/" + total;
+}
+document.getElementById("counter").innerHTML = 1+"/"+image.length;
+	</script>
 
 </html>
