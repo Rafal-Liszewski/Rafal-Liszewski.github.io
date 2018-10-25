@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* highlight text */
+
+::-moz-selection {color: #ffffff;background: #232323;}
+
+::selection {color: #ffffff;background: #232323;}
+
+/* background */
+
+body {
+	cursor: url("cursor.svg") 7 7 ,auto;
+	background-color: ; /*#FFF5EE*/
+    width: 100%;
+    height: 100%;
+}
+
+/* font management */
+/* helvetica/arial - times/times new roman - courier/courier new */
+
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	font-size: 1.3rem; /*24px*/
+	line-height: 0;
+	color: #000000;
+}
+
+h2 {
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 2.5;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+    letter-spacing: 0.4px;
+	line-height: 1.5;
+}
+
+h6 {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+	color: #c64200; /*#c03000*/
+	background-color: ;
+	cursor: url("cursor_hover.svg") 7 7 ,auto;
+}
+
+a:hover {
+ color: #FFFFFF;
+ background-color: #000000;
+}
+
+/*body*/
+
+#hold_me {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#who_am_i{
+    margin: 20px 0px 0px 20px;
+    /*position: absolute;
+    top: 20px;
+    right: ;
+    bottom: ;
+    left: 20px; */
+	padding: 15px;
+    border: #000000;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    max-width: 200px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+#what_i_am{
+    margin: 20px 20px 0px 20px;
+    /*position: absolute;
+    top: 20px;
+    right: ;
+    bottom: ;
+    left: 20px; */
+	padding: 15px;
+    border: #000000;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    max-width: ;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    padding-bottom: 15px;
+}
