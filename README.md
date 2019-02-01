@@ -1,3 +1,3 @@
-# It's me, your illustrator friend.
+# It's me, your visual communication graphic design illustrator friend.
 # — contact, commissions & collaborations
 # raffa.lisz[at]gmail.com
