@@ -78,11 +78,30 @@ body {
     font-style: normal;
 } */
 
+@font-face {
+    font-family: 'Avara';
+    src:    url('Avara/BoldItalic/Avara-Bold_Italic_web.eot');
+    src:    url('Avara/BoldItalic/Avara-Bold_Italic_web.eot?#iefix') format('embedded-opentype'),
+            url('Avara/BoldItalic/Avara-Bold_Italic_web.woff') format('woff'),
+            url('Avara/BoldItalic/Avara-Bold_Italic_web.woff2') format('woff2'),
+            url('Avara/BoldItalic/Avara-Bold_Italic_web.ttf') format('truetype'),
+            url('Avara/BoldItalic/Avara-Bold_Italic_web.svg#svgFontName') format('svg');
+    font-weight: normal;
+    font-style: normal; }
+
 h1 {
-	font-family: Helvetica, sans-serif;
-	font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
     letter-spacing: 0.6px;
-	line-height: 1.5;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Avara';
+    font-size: 2em;
+    letter-spacing: 0.9px;
+    line-height: 1.5;
+     word-spacing: 1px;
 }
 
 p {
@@ -93,7 +112,8 @@ p {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
+    text-decoration-style: wavy;
 	color: #c64200; /*#c03000*/
 	background-color: ;
 	cursor: url("cursor_hover.svg") 7 7 ,auto;
@@ -107,6 +127,7 @@ a:hover {
 /**/
 
 #mainwrap {
+    visibility: visible;
     position: absolute;
     margin: auto;
     top: 0;
@@ -138,6 +159,12 @@ a:hover {
     text-align: right;
 }
 
+
+#midcol, img {
+    height: auto;
+    max-width: 100%;
+}
+
 #rightcol {
     padding: 10px;
     border-style: solid;
@@ -147,7 +174,20 @@ a:hover {
     background-color: #FFFFFF;
 }
 
-#midcol, img {
-    height: auto;
-    max-width: 100%;
+#mobilemain {
+    visibility: hidden;
+    position: static;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+
+@media screen and (max-width:800px) {
+  #mobilemain {
+      visibility: visible;
+  }
+  #mainwrap{
+      visibility: hidden;
+  }
 }
