@@ -89,6 +89,13 @@ body {
     font-weight: normal;
     font-style: normal; }
 
+@font-face {
+    font-family: 'Bagnard';
+    src: url('Bagnard.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
@@ -105,8 +112,8 @@ h2 {
 }
 
 p {
-	font-family: Helvetica, sans-serif;
-	font-size: 12px;
+	font-family: 'Bagnard';
+	font-size: 32px;
     letter-spacing: 0.4px;
 	line-height: 1.5;
 }
@@ -126,69 +133,16 @@ a:hover {
 
 /**/
 
-#mainwrap {
-    visibility: visible;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    height: 200px;
-    width: 600px;
-}
-
-#leftcol {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px 0px 1px 1px;
-    border-color: #000000;
-    overflow: auto;
-    background-color: #FFFFFF;
-}
-
-#midcol {
-    padding: 10px;
+#mouth {
+    position: static;
+    margin: 10px;
+    padding: 25px;
     border-style: solid;
     border-width: 1px;
     border-color: #000000;
-    overflow: auto;
-    background-color: #FFFFFF;
-    text-align: right;
-}
-
-
-#midcol, img {
-    height: auto;
-    max-width: 100%;
-}
-
-#rightcol {
-    padding: 10px;
-    border-style: solid;
-    border-width: 1px 1px 1px 0px;
-    border-color: #000000;
-    overflow: auto;
     background-color: #FFFFFF;
 }
-
-#mobilemain {
-    visibility: hidden;
-    position: static;
-    padding: 20px;
-    background-color: white;
-    text-align: left;
-    width: 100vw;
-}
-
 
 @media screen and (max-width:800px) {
-  #mobilemain {
-      visibility: visible;
-  }
-  #mainwrap{
-      visibility: hidden;
-  }
+
 }
