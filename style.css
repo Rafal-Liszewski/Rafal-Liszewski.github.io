@@ -60,8 +60,10 @@ table {
 body {
 	cursor: url("cursor.svg") 7 7 ,auto;
 	background-color: #69a08c; /*#FFF5EE*/
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+	background-image: url("light.png");
+	background-repeat: repeat;
 }
 
 /* font management */
@@ -78,57 +80,39 @@ body {
     font-style: normal;
 } */
 
-@font-face {
-    font-family: 'Avara';
-    src:    url('Avara/BoldItalic/Avara-Bold_Italic_web.eot');
-    src:    url('Avara/BoldItalic/Avara-Bold_Italic_web.eot?#iefix') format('embedded-opentype'),
-            url('Avara/BoldItalic/Avara-Bold_Italic_web.woff') format('woff'),
-            url('Avara/BoldItalic/Avara-Bold_Italic_web.woff2') format('woff2'),
-            url('Avara/BoldItalic/Avara-Bold_Italic_web.ttf') format('truetype'),
-            url('Avara/BoldItalic/Avara-Bold_Italic_web.svg#svgFontName') format('svg');
-    font-weight: normal;
-    font-style: normal; }
-
-@font-face {
-    font-family: 'Bagnard';
-    src: url('Bagnard.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 h1 {
     font-family: Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0.6px;
     line-height: 1.5;
 }
 
 h2 {
-    font-family: 'Avara';
-    font-size: 2em;
+    font-family: helvetica;
+    font-size: 16px;
     letter-spacing: 0.9px;
     line-height: 1.5;
      word-spacing: 1px;
 }
 
 p {
-	font-family: 'Bagnard';
-	font-size: 32px;
+	font-family: helvetica;
+	font-size: 16px;
     letter-spacing: 0.4px;
 	line-height: 1.5;
 }
 
 a {
 	text-decoration: underline;
-    text-decoration-style: wavy;
-	color: #c64200; /*#c03000*/
+  text-decoration-style: wavy;
+	color: #FF8C00;
 	background-color: ;
 	cursor: url("cursor_hover.svg") 7 7 ,auto;
 }
 
 a:hover {
- color: #c64200;
- background-color: #c64200;
+ color: #FF8C00;
+ background-color: #FF8C00;
 }
 
 /**/
@@ -138,7 +122,7 @@ a:hover {
     margin: 10px;
     padding: 25px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     border-color: #000000;
     background-color: #FFFFFF;
 }
