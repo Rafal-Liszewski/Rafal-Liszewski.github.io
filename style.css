@@ -59,9 +59,9 @@ table {
 
 body {
 	cursor: url("cursor.svg") 7 7 ,auto;
-	background-color: #69a08c; /*#FFF5EE*/
   width: 100%;
   height: 100%;
+	background-color:;
 	background-image: url("light.png");
 	background-repeat: repeat;
 }
@@ -80,15 +80,26 @@ body {
     font-style: normal;
 } */
 
+@font-face {
+    font-family: 'Office';
+    src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
+		src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
+						url('OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
+            url('OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
+            url('OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Office';
+    font-size: 20px;
     letter-spacing: 0.6px;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 h2 {
-    font-family: helvetica;
+    font-family: 'Office';
     font-size: 16px;
     letter-spacing: 0.9px;
     line-height: 1.5;
@@ -96,15 +107,15 @@ h2 {
 }
 
 p {
-	font-family: helvetica;
+	font-family: 'Office';
 	font-size: 16px;
     letter-spacing: 0.4px;
-	line-height: 1.5;
+	line-height: 1.8;
 }
 
 a {
-	text-decoration: underline;
-  text-decoration-style: wavy;
+	text-decoration: none;
+  text-decoration-style:;
 	color: #FF8C00;
 	background-color: ;
 	cursor: url("cursor_hover.svg") 7 7 ,auto;
@@ -121,6 +132,7 @@ a:hover {
     position: static;
     margin: 10px;
     padding: 25px;
+		max-width: 400px;
     border-style: solid;
     border-width: 0px;
     border-color: #000000;
