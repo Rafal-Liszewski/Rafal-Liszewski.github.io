@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain) */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,8 +60,8 @@ body {
 	cursor: url("cursor.svg") 7 7 ,auto;
   width: 100%;
   height: 100%;
-	background-color:;
-	background-image: url("light.png");
+	background-color: #FFE4C4;
+	background-image: url("stripe.png");
 	background-repeat: repeat;
 }
 
@@ -98,19 +97,12 @@ h1 {
     line-height: 1.8;
 }
 
-h2 {
-    font-family: 'Office';
-    font-size: 16px;
-    letter-spacing: 0.9px;
-    line-height: 1.5;
-     word-spacing: 1px;
-}
-
 p {
 	font-family: 'Office';
 	font-size: 16px;
     letter-spacing: 0.4px;
 	line-height: 1.8;
+    word-spacing: 1px;
 }
 
 a {
@@ -122,8 +114,8 @@ a {
 }
 
 a:hover {
- color: #FF8C00;
- background-color: #FF8C00;
+ color: #FFE4C4; /*FF8C00*/
+ background-color: #FFE4C4;
 }
 
 /**/
@@ -132,11 +124,24 @@ a:hover {
     position: static;
     margin: 10px;
     padding: 25px;
-		max-width: 400px;
+	max-width: 400px;
     border-style: solid;
     border-width: 0px;
     border-color: #000000;
     background-color: #FFFFFF;
+}
+
+img {
+    margin: 10px;
+    max-width: 400px;
+    max-width:100%;
+    height:auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    height: ;
+    width: auto;
 }
 
 @media screen and (max-width:800px) {
