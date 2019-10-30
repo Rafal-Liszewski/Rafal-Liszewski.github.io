@@ -144,6 +144,7 @@ a:hover {
     border-width: 0px;
     border-color: #000000;
     background-color: #FFFFFF;
+		overflow: auto;
 }
 
 #mouth #tongue {
