@@ -1,4 +1,5 @@
-# It's me, your
-# visual communication graphic design illustrator friend.
+# A journey of discovery & progress.
+# I play god here.
+#
 # — contact, commissions & collaborations
 # raffa.lisz[at]gmail.com
