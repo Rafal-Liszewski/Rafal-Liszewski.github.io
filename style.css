@@ -50,16 +50,16 @@ table {
 
 /* highlight text */
 
-::-moz-selection {color: #5F5246;background: #5F5246;}
+::-moz-selection {color: #FF4136;background: #FF4136;} /*#5F5246*/
 
-::selection {color: #5F5246;background: #5F5246;}
+::selection {color: #FF4136;background: #FF4136;}
 
 /* background */
 
 body {
     width: 100%;
     height: 100%;
-	background-color: #FFE4C4;
+	background-color: #000000; /*FFE4C4*/
 }
 
 /* font import */
@@ -67,8 +67,8 @@ body {
 @font-face {
     font-family: 'Office';
     src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
-		src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
-						url('OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
+	src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
+			url('OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
             url('OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
             url('OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -97,12 +97,12 @@ p {
 a {
 	text-decoration: underline;
     text-decoration-style: dotted;
-	color: #D2B48C;
+	color: #FF4136;
 }
 
 a:hover {
- color: #D2B48C; /*FF8C00*/
- background-color: #D2B48C;
+ color: #FF4136; /*FF8C00*/ /*D2B48C*/
+ background-color: #FF4136;
 }
 
 /* floating places */
@@ -124,4 +124,15 @@ a:hover {
 
 #teeth {
     max-width: 400px;
+    float: left;
+}
+
+#tongue {
+    float:right;
+    padding-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
 }
