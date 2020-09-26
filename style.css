@@ -75,10 +75,21 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OfficeB';
+    src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot');
+	src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot?#iefix') format('embedded-opentype'),
+			url('OfficeCodeProD/WOFF/OfficeCodeProD-Bold.woff') format('woff'),
+            url('OfficeCodeProD/WOFF2/OfficeCodeProD-Bold.woff2') format('woff2'),
+            url('OfficeCodeProD/TTF/OfficeCodeProD-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* font management */
 
 h1 {
-    font-family: 'Office';
+    font-family: 'OfficeB';
     font-size: 12px;
     letter-spacing: 0.6px;
     line-height: 1.8;
