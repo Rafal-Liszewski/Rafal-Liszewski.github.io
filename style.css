@@ -66,22 +66,30 @@ body {
 
 @font-face {
     font-family: 'Office';
-    src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
-	src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
-			url('OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
-            url('OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
-            url('OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
+    src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
+	src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
+            url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
+            url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'OfficeB';
-    src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot');
-	src:    url('OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot?#iefix') format('embedded-opentype'),
-			url('OfficeCodeProD/WOFF/OfficeCodeProD-Bold.woff') format('woff'),
-            url('OfficeCodeProD/WOFF2/OfficeCodeProD-Bold.woff2') format('woff2'),
-            url('OfficeCodeProD/TTF/OfficeCodeProD-Bold.ttf') format('truetype');
+    src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot');
+	src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/OfficeCodeProD/WOFF/OfficeCodeProD-Bold.woff') format('woff'),
+            url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Bold.woff2') format('woff2'),
+            url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sinistre';
+	src:url('fonts/Sinistre/SinistreStCaroline.woff') format('woff'),
+        url('fonts/Sinistre/SinistreStCaroline.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -89,18 +97,27 @@ body {
 /* font management */
 
 h1 {
-    font-family: 'OfficeB';
-    font-size: 12px;
+    font-family: 'Sinistre';
+    font-size: 2em;
     letter-spacing: 0.6px;
-    line-height: 1.8;
+    line-height: 1;
+    color: #404040;
+}
+
+h2 {
+    font-family: 'OfficeB';
+    font-size: 0.7em;
+    letter-spacing: 0.7px;
+    line-height: 1;
+    word-spacing: 0.5px;
     color: #404040;
 }
 
 p {
 	font-family: 'Office';
-	font-size: 12px;
+	font-size: 0.7em; /* 12px */
     letter-spacing: 0.7px;
-	line-height: 1.4;
+	line-height: 1.5;
     word-spacing: 0.5px;
     color: #404040;
 }
@@ -134,7 +151,7 @@ a:hover {
 }
 
 #teeth {
-    max-width: 400px;
+    max-width: 500px;
     float: left;
 }
 
@@ -146,4 +163,22 @@ a:hover {
 img {
     max-width: 100%;
 	height: auto;
+    display: inline-block;
+}
+
+@keyframes blinking {
+ 0%   {color: black;}
+ 50%  {color: white;}
+ 100% {color: black;}
+}
+
+.blink {
+    animation-name: blinking;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.blockline {
+    color: #000000;
+    background-color: #FFFFFF;
 }
