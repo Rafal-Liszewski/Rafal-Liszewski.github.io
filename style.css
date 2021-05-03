@@ -113,7 +113,7 @@ h2 {
     color: #404040;
 }
 
-p {
+p, li {
 	font-family: 'Office';
 	font-size: 0.7em; /* 12px */
     letter-spacing: 0.7px;
