@@ -33,7 +33,7 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1;
-    background-color: #000000;
+    background-color: #FFF9F3;
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +57,7 @@ table {
 
 ::selection {color: #FF4136;background: #FF4136;}
 
-/* font import */
+/* font library import */
 
 @font-face {
     font-family: 'Office';
@@ -89,6 +89,31 @@ table {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CocoB';
+    src:url('fonts/Coconat/Coconat-BoldExt.woff') format('woff'),
+        url('fonts/Coconat/Coconat-BoldExt.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaziusX';
+    src:url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff') format('woff'),
+        url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RotPRoman';
+    src:url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff') format('woff'),
+        url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* font management */
 
 h1 {
@@ -96,7 +121,7 @@ h1 {
     font-size: 2em;
     letter-spacing: 0.6px;
     line-height: 1;
-    color: #404040;
+    color: #1b2329;
 }
 
 h2 {
@@ -105,7 +130,7 @@ h2 {
     letter-spacing: 0.7px;
     line-height: 1;
     word-spacing: 0.5px;
-    color: #404040;
+    color: #1b2329;
 }
 
 p, li {
@@ -114,7 +139,7 @@ p, li {
     letter-spacing: 0.7px;
 	line-height: 1.5;
     word-spacing: 0.5px;
-    color: #404040;
+    color: #1b2329;
 }
 
 a {
@@ -139,23 +164,24 @@ img {
 /* floating places */
 
 #mouth {
-    position:fixed;
-    margin: 10px;
-    padding: 20px;
-    top:0;
+    position:absolute;
+    margin: ;
+    padding: ;
+    top:47%;
+    left:50%;
     right:0;
     bottom:0;
-    left:0;
     border-style: solid;
     border-width: 0px;
-    border-color: #000000;
-    background-color: #FFFFFF;
-	overflow: auto;
+    border-color: #1B2329;
+	overflow: ;
+    transform: translate(-50%, -50%);
 }
 
 #teeth {
-    max-width: 500px;
-    float: left;
+    max-width: ;
+    float: ;
+    text-align: center;
 }
 
 #tongue {
@@ -225,3 +251,28 @@ img {
     color: #000000;
     background-color: #FFFFFF;
 }
+
+@keyframes fontChange {
+  0% {font-family: 'Office';}
+  20% {font-family: 'OfficeB';}
+  40% {font-family: 'Sinistre';}
+  60% {font-family: 'CocoB';}
+  80% {font-family: 'MaziusX';}
+  100% {font-family: 'RotPRoman';}
+}
+
+.fontC {
+  font-size: 2.3em;
+  color: #1b2329;
+  animation-name: fontChange;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+/*
+
+
+
+
+
+*/
