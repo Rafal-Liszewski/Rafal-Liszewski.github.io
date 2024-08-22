@@ -113,12 +113,11 @@ table {
     font-style: normal;
 }
 
-
 /* font management */
 
 h1 {
     font-family: 'Sinistre';
-    font-size: 2em;
+    font-size: 1.4em;
     letter-spacing: 0.6px;
     line-height: 1;
     color: #1b2329;
@@ -149,40 +148,79 @@ a {
 }
 
 a:hover {
- color: #FF4136; /*FF8C00*/ /*D2B48C*/
- background-color: #FF4136;
+    color: #FF4136;
+    background-color: #FF4136;
 }
 
 /* image */
 
 img {
+    position: relative;
     max-width: 100%;
+    max-height: 100%;
 	height: auto;
-    /*display: inline-block;*/
+    display: inline-block;
 }
 
 /* floating places */
 
 #mouth {
     position:absolute;
-    margin: ;
-    padding: ;
-    top:47%;
+    top:43%;
     left:50%;
     right:0;
     bottom:0;
-    border-style: solid;
-    border-width: 0px;
-    border-color: #1B2329;
-	overflow: ;
     transform: translate(-50%, -50%);
 }
 
 #teeth {
-    max-width: ;
-    float: ;
-    text-align: center;
+    text-align: left;
+    border: 1px solid #000000;
 }
+
+td {
+    vertical-align: top;
+}
+
+table, th, td {
+  border: 1px solid;
+  padding: ;
+}
+
+.frontPage {
+    padding:15px 10px 10px 15px;
+}
+
+/* blink animation */
+
+@keyframes blinking {0%{color: black;}50%{color: white;}100%{color: black;}}
+
+.blink {animation-name: blinking;animation-duration: 0.8s;animation-iteration-count: infinite;}
+
+.blockline {color: #000000;background-color: #FFFFFF;}
+
+/* font animation */
+
+@keyframes fontChange {
+  0% {font-family: 'Office';}
+  20% {font-family: 'OfficeB';}
+  40% {font-family: 'Sinistre';}
+  60% {font-family: 'CocoB';}
+  80% {font-family: 'MaziusX';}
+  100% {font-family: 'RotPRoman';}
+}
+
+.fontC {
+  font-size: 2.3em;
+  color: #1b2329;
+  animation-name: fontChange;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+/*
+
+UNUSED STUFF FROM THE LAST WEBSITE DUNNO TO USE
 
 #tongue {
     float:right;
@@ -201,8 +239,8 @@ img {
 }
 
 #mid img {
-    /*height: 100%;
-    max-width: 100%; */
+    ßheight: 100%;
+    max-width: 100%;
     max-height: 95%;
     display: block;
     margin: auto;
@@ -232,46 +270,6 @@ img {
 #rig p {
     font-size: 2em;
 }
-
-/* blink animation */
-
-@keyframes blinking {
- 0%   {color: black;}
- 50%  {color: white;}
- 100% {color: black;}
-}
-
-.blink {
-    animation-name: blinking;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-}
-
-.blockline {
-    color: #000000;
-    background-color: #FFFFFF;
-}
-
-@keyframes fontChange {
-  0% {font-family: 'Office';}
-  20% {font-family: 'OfficeB';}
-  40% {font-family: 'Sinistre';}
-  60% {font-family: 'CocoB';}
-  80% {font-family: 'MaziusX';}
-  100% {font-family: 'RotPRoman';}
-}
-
-.fontC {
-  font-size: 2.3em;
-  color: #1b2329;
-  animation-name: fontChange;
-  animation-duration: 0.7s;
-  animation-iteration-count: infinite;
-}
-
-/*
-
-
 
 
 
