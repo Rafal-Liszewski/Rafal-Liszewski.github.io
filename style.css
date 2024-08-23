@@ -53,13 +53,10 @@ table {
 }*/
 
 /* highlight text */
-
 ::-moz-selection {color: #FF4136;background: #FF4136;} /*#5F5246*/
-
 ::selection {color: #FF4136;background: #FF4136;}
 
 /* font library import */
-
 @font-face {
     font-family: 'Office';
     src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
@@ -68,9 +65,7 @@ table {
             url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
             url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal; }
 @font-face {
     font-family: 'OfficeB';
     src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot');
@@ -79,50 +74,39 @@ table {
             url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Bold.woff2') format('woff2'),
             url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Bold.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal; }
 @font-face {
     font-family: 'Sinistre';
 	src:url('fonts/Sinistre/SinistreStCaroline.woff') format('woff'),
         url('fonts/Sinistre/SinistreStCaroline.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal; }
 @font-face {
     font-family: 'CocoB';
     src:url('fonts/Coconat/Coconat-BoldExt.woff') format('woff'),
         url('fonts/Coconat/Coconat-BoldExt.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal;}
 @font-face {
     font-family: 'MaziusX';
     src:url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff') format('woff'),
         url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
-
+    font-style: normal; }
 @font-face {
     font-family: 'RotPRoman';
     src:url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff') format('woff'),
         url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal;}
 
 /* font management */
-
 h1 {
     font-family: 'Sinistre';
     font-size: 1.4em;
     letter-spacing: 0.6px;
     line-height: 1;
-    color: #1b2329;
-}
+    color: #1b2329; }
 
 h2 {
     font-family: 'OfficeB';
@@ -130,8 +114,7 @@ h2 {
     letter-spacing: 0.7px;
     line-height: 1;
     word-spacing: 0.5px;
-    color: #1b2329;
-}
+    color: #1b2329; }
 
 p, li {
 	font-family: 'Office';
@@ -139,19 +122,16 @@ p, li {
     letter-spacing: 0.7px;
 	line-height: 1.5;
     word-spacing: 0.5px;
-    color: #1b2329;
-}
+    color: #1b2329; }
 
 a {
 	text-decoration: underline;
     text-decoration-style: dotted;
-	color: #FF4136;
-}
+	color: #FF4136; }
 
 a:hover {
     color: #FF4136;
-    background-color: #FF4136;
-}
+    background-color: #FF4136; }
 
 /* image */
 
@@ -164,7 +144,9 @@ img {
 }
 
 /* floating places */
+#title {position:relative;left:10px;top:10px;}
 
+/*
 #mouth {
     position:absolute;
     top:43%;
@@ -178,7 +160,7 @@ img {
     text-align: left;
     border: 1px solid #000000;
 }
-
+*/
 td {
     vertical-align: top;
 }
