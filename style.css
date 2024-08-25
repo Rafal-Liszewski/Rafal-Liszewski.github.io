@@ -107,7 +107,6 @@ h1 {
     letter-spacing: 0.6px;
     line-height: 1;
     color: #1b2329; }
-
 h2 {
     font-family: 'OfficeB';
     font-size: 0.7em;
@@ -115,7 +114,6 @@ h2 {
     line-height: 1;
     word-spacing: 0.5px;
     color: #1b2329; }
-
 p, li {
 	font-family: 'Office';
 	font-size: 0.7em; /* 12px */
@@ -123,25 +121,21 @@ p, li {
 	line-height: 1.5;
     word-spacing: 0.5px;
     color: #1b2329; }
-
 a {
 	text-decoration: underline;
     text-decoration-style: dotted;
 	color: #FF4136; }
-
 a:hover {
     color: #FF4136;
     background-color: #FF4136; }
 
-/* image */
-
+/* image handling */
 img {
     position: relative;
     max-width: 100%;
     max-height: 100%;
 	height: auto;
-    display: inline-block;
-}
+    display: inline-block;}
 
 /* floating places */
 #title {position:relative;left:10px;top:10px;}
@@ -155,12 +149,14 @@ img {
     bottom:0;
     transform: translate(-50%, -50%);
 }
-
+*/
 #teeth {
+	position:relative;
     text-align: left;
     border: 1px solid #000000;
+    left:10px;
 }
-*/
+
 td {
     vertical-align: top;
 }
@@ -170,36 +166,24 @@ table, th, td {
   padding: ;
 }
 
+table {max-width:800px;}
+
 .frontPage {
     padding:15px 10px 10px 15px;
 }
 
 /* blink animation */
-
 @keyframes blinking {0%{color: black;}50%{color: white;}100%{color: black;}}
-
 .blink {animation-name: blinking;animation-duration: 0.8s;animation-iteration-count: infinite;}
-
 .blockline {color: #000000;background-color: #FFFFFF;}
 
 /* font animation */
-
-@keyframes fontChange {
-  0% {font-family: 'Office';}
-  20% {font-family: 'OfficeB';}
-  40% {font-family: 'Sinistre';}
+@keyframes fontChange {0% {font-family: 'Office';}20% {font-family: 'OfficeB';}  40% {font-family: 'Sinistre';}
   60% {font-family: 'CocoB';}
   80% {font-family: 'MaziusX';}
-  100% {font-family: 'RotPRoman';}
-}
+  100% {font-family: 'RotPRoman';}}
 
-.fontC {
-  font-size: 2.3em;
-  color: #1b2329;
-  animation-name: fontChange;
-  animation-duration: 0.7s;
-  animation-iteration-count: infinite;
-}
+.fontC {font-size: 2.3em;color: #1b2329;animation-name: fontChange;animation-duration: 0.7s;animation-iteration-count: infinite;}
 
 /*
 
