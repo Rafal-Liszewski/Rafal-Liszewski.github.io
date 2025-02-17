@@ -1,175 +1,109 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain) */
+/*https://www.joshwcomeau.com/css/custom-css-reset/*/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* 2. Remove default margin */
+* {
+  margin: 0;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
-    width: 100%;
-    height: 100%;
-	margin: 0;
-	padding: 0;
-	line-height: 1;
-    background-color: #FFF9F3;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-/*
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}*/
 
-/* highlight text */
-::-moz-selection {color: #FF4136;background: #FF4136;} /*#5F5246*/
-::selection {color: #FF4136;background: #FF4136;}
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* 9. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
 
 /* font library import */
 @font-face {
     font-family: 'Office';
-    src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot');
-	src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Regular.eot?#iefix') format('embedded-opentype'),
-			url('fonts/OfficeCodeProD/WOFF/OfficeCodeProD-Regular.woff') format('woff'),
-            url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Regular.woff2') format('woff2'),
-            url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal; }
-@font-face {
-    font-family: 'OfficeB';
-    src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot');
-	src:    url('fonts/OfficeCodeProD/EOT/OfficeCodeProD-Bold.eot?#iefix') format('embedded-opentype'),
-			url('fonts/OfficeCodeProD/WOFF/OfficeCodeProD-Bold.woff') format('woff'),
-            url('fonts/OfficeCodeProD/WOFF2/OfficeCodeProD-Bold.woff2') format('woff2'),
-            url('fonts/OfficeCodeProD/TTF/OfficeCodeProD-Bold.ttf') format('truetype');
+	src:    url('fonts/OCP/OfficeCodeProD-Regular.woff') format('woff'),
+            url('fonts/OCP/OfficeCodeProD-Regular.woff2') format('woff2'),
     font-weight: normal;
     font-style: normal; }
 @font-face {
     font-family: 'Sinistre';
-	src:url('fonts/Sinistre/SinistreStCaroline.woff') format('woff'),
-        url('fonts/Sinistre/SinistreStCaroline.woff2') format('woff2');
+	src:url('fonts/SinistreStCaroline.woff') format('woff'),
+        url('fonts/SinistreStCaroline.woff2') format('woff2');
     font-weight: normal;
     font-style: normal; }
 @font-face {
     font-family: 'CocoB';
-    src:url('fonts/Coconat/Coconat-BoldExt.woff') format('woff'),
-        url('fonts/Coconat/Coconat-BoldExt.woff2') format('woff2');
+    src:url('fonts/Coconat-BoldExt.woff') format('woff'),
+        url('fonts/Coconat-BoldExt.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;}
 @font-face {
     font-family: 'MaziusX';
-    src:url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff') format('woff'),
-        url('fonts/Mazius/MAZIUSREVIEW2009-Extraitalic.woff2') format('woff2');
+    src:url('fonts/MaziusReview-Extraitalic.woff') format('woff'),
+        url('fonts/MaziusReview-Extraitalic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal; }
 @font-face {
     font-family: 'RotPRoman';
-    src:url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff') format('woff'),
-        url('fonts/RotProtoRoman/Rot-Proto-Roman102R.woff2') format('woff2');
+    src:url('fonts/Rot-Proto-Roman-Regular.woff') format('woff'),
+        url('fonts/Rot-Proto-Roman-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;}
 
-/* font management */
-h1 {
-    font-family: 'Sinistre';
-    font-size: 1.4em;
-    letter-spacing: 0.6px;
-    line-height: 1;
-    color: #1b2329; }
-h2 {
-    font-family: 'OfficeB';
-    font-size: 0.7em;
-    letter-spacing: 0.7px;
-    line-height: 1;
-    word-spacing: 0.5px;
-    color: #1b2329; }
+/* c0re */
+body {
+	background-color:black;
+}
+
+/* under new font management */
 p, li {
 	font-family: 'Office';
-	font-size: 0.7em; /* 12px */
+	font-size: 12px;
     letter-spacing: 0.7px;
-	line-height: 1.5;
     word-spacing: 0.5px;
-    color: #1b2329; }
-a {
-	text-decoration: underline;
-    text-decoration-style: dotted;
-	color: #FF4136; }
-a:hover {
-    color: #FF4136;
-    background-color: #FF4136; }
+    color: white; }
+    
+a {text-decoration: underline ;text-decoration-style: double;color: white; }
+a:hover {color:black;background-color:white; }
 
-/* image handling */
-img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-	height: auto;
-    display: inline-block;}
+/* table structure */
+table { 
+  border-spacing: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  height: ;
+} 
 
-/* floating places */
-#title {position:relative;left:10px;top:10px;}
-
-/*
-#mouth {
-    position:absolute;
-    top:43%;
-    left:50%;
-    right:0;
-    bottom:0;
-    transform: translate(-50%, -50%);
-}
-*/
-#teeth {
-	position:relative;
-    text-align: left;
-    border: 1px solid #000000;
-    left:10px;
-}
-
-td {
-    vertical-align: top;
-}
-
-table, th, td {
-  border: 1px solid;
-  padding: ;
-}
-
-table {max-width:800px;}
-
-.frontPage {
-    padding:15px 10px 10px 15px;
+td, th {
+	border: 1px solid white;
+	padding: 10px;
 }
 
 /* blink animation */
@@ -177,67 +111,3 @@ table {max-width:800px;}
 .blink {animation-name: blinking;animation-duration: 0.8s;animation-iteration-count: infinite;}
 .blockline {color: #000000;background-color: #FFFFFF;}
 
-/* font animation */
-@keyframes fontChange {0% {font-family: 'Office';}20% {font-family: 'OfficeB';}  40% {font-family: 'Sinistre';}
-  60% {font-family: 'CocoB';}
-  80% {font-family: 'MaziusX';}
-  100% {font-family: 'RotPRoman';}}
-
-.fontC {font-size: 2.3em;color: #1b2329;animation-name: fontChange;animation-duration: 0.7s;animation-iteration-count: infinite;}
-
-/*
-
-UNUSED STUFF FROM THE LAST WEBSITE DUNNO TO USE
-
-#tongue {
-    float:right;
-    padding-bottom: 20px;
-}
-
-#mid {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    background-color:;
-    text-align: center;
-}
-
-#mid img {
-    ßheight: 100%;
-    max-width: 100%;
-    max-height: 95%;
-    display: block;
-    margin: auto;
-    padding-bottom: 5px;
-}
-
-#lef {
-    position: absolute;
-    left: 20px;
-    bottom: 30px;
-    width: 2em;
-    height: 2em;
-}
-
-#lef p {
-    font-size: 2em;
-}
-
-#rig {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
-    width: 2em;
-    height: 2em;
-}
-
-#rig p {
-    font-size: 2em;
-}
-
-
-
-*/
